@@ -30,6 +30,7 @@
 
       <nav class="navbar__nav" aria-label="Primary">
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -52,6 +53,7 @@
 
     <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
       <a href="#about">About</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -68,15 +70,15 @@
           <p class="hero__tagline">Building and maintaining quality through automation and attention to detail.</p>
           <div class="hero__actions">
             <a href="#projects" class="btn btn--primary">View My Work</a>
-            <!-- Add your CV PDF at Assets/Brandon-CV.pdf. -->
-            <a href="https://drive.google.com/file/d/16hxQB9cYAXUxAOexR2MPWDCSHlYB9bVz/view?usp=sharing" class="btn btn--secondary" download="Brandon-CV.pdf">
+            <a href="https://drive.google.com/file/d/16hxQB9cYAXUxAOexR2MPWDCSHlYB9bVz/view?usp=sharing"
+              class="btn btn--secondary" target="_blank" rel="noopener noreferrer" aria-label="View CV (opens in a new tab)">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
+                <path d="M15 3h6v6"></path>
+                <path d="M10 14 21 3"></path>
+                <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"></path>
               </svg>
-              Download CV
+              View CV
             </a>
           </div>
         </div>
@@ -125,6 +127,29 @@
             </ul>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="section__inner">
+        <p class="eyebrow reveal">$ cat experience.log</p>
+        <h2 class="section__title reveal" id="experience-title">Experience</h2>
+
+        <article class="experience reveal">
+          <div class="experience__header">
+            <div>
+              <h3 class="experience__role">QA Engineer</h3>
+              <p class="experience__company">Superbank Indonesia</p>
+            </div>
+            <span class="experience__status">Current role</span>
+          </div>
+          <ul class="experience__highlights">
+            <li>Build and maintain mobile test automation.</li>
+            <li>Perform API and performance testing.</li>
+            <li>Build CI/CD pipelines that run test suites on every change.</li>
+          </ul>
+        </article>
       </div>
     </section>
 
