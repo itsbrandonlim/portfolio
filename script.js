@@ -68,7 +68,7 @@
     { type: "check", text: "mobile-automation.spec", status: "passed" },
     { type: "check", text: "api-collection.spec", status: "passed" },
     { type: "check", text: "performance-load.spec", status: "passed" },
-    { type: "summary", text: "3/3 passed · quality confirmed" },
+    { type: "summary", text: "3/3 passed" },
   ];
 
   const buildLine = (line) => {

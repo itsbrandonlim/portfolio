@@ -456,6 +456,18 @@ button:focus-visible {
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
+.experience__identity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  min-width: 0;
+}
+.experience__logo {
+  width: 120px;
+  height: auto;
+  flex-shrink: 0;
+}
 .experience__role { font-size: 1.2rem; font-weight: 700; }
 .experience__company { margin-top: 0.25rem; color: var(--text-1); }
 .experience__status {
