@@ -379,8 +379,8 @@ button:focus-visible {
 .about__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.5rem;
-  align-items: center;
+  gap: 1.75rem;
+  align-items: start;
 }
 
 .avatar {
@@ -407,11 +407,30 @@ button:focus-visible {
 }
 .avatar--fallback .avatar__fallback { display: flex; }
 
+.about__content { min-width: 0; max-width: 62ch; }
+.about__intro {
+  color: var(--text-0);
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
 .about__text {
   color: var(--text-1);
-  font-size: 1.05rem;
-  max-width: 62ch;
-  margin-bottom: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.about__text + .about__text { margin-top: 1rem; }
+.about__tools {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-soft);
+}
+.about__tools-title {
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-1);
 }
 
 .tag-list {
