@@ -503,6 +503,42 @@ button:focus-visible {
 .experience__highlights li + li { margin-top: 0.65rem; }
 .experience__highlights li::marker { color: var(--accent); }
 
+/* ---- Education ---- */
+.education__list {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 800px;
+}
+.education-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-m);
+}
+.education-card__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 112px;
+  width: 112px;
+  height: 88px;
+  padding: 0.75rem;
+  background: #fff;
+  border-radius: var(--radius-s);
+}
+.education-card__logo img { width: 100%; height: 100%; object-fit: contain; }
+.education-card__content { min-width: 0; }
+.education-card__title { font-size: 1.15rem; font-weight: 700; }
+.education-card__qualification { margin-top: 0.4rem; color: var(--text-1); }
+.education-card__dates { margin-top: 0.75rem; color: var(--accent); font-size: 0.85rem; }
+@media (max-width: 480px) {
+  .education-card { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .education-card__logo { flex-basis: auto; }
+}
+
 /* ---- Projects ---- */
 .projects__grid {
   display: grid;
